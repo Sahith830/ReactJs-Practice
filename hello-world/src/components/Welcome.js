@@ -1,9 +1,17 @@
-import React, {Component} from 'react'
+import React, { Component } from "react";
 
 class Welcome extends Component {
-    render () {
-        return <h1> Hello Folks </h1>
-    }
+  render() {
+    return (
+      <div>
+        <h1>
+          {" "}
+          Hello Folks {this.props.name} aka {this.props.age}
+        </h1>
+        {this.props.children}
+      </div>
+    );
+  }
 }
 
-export default Welcome
+export default Welcome;
