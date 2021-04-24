@@ -1,21 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import * as Greet from './components/Greet'
-import Welcome from './components/Welcome'
-import * as Hello from './components/Hello'
+import Greet from './components/Greet'
 
 function App() {
   return (
     <div className="App">
-      <Greet.Greet1 />
-      <Greet.Greet2 />
-      <Greet.Greet3 />
-
-      <Welcome />
-      <Welcome />
-
-      <Hello.WithJSX />
-      <Hello.WithoutJSX />
+      <Greet name = "Swara" age = "5">  
+        <p> Child Property </p>
+       </Greet> 
+      <Greet name = "Sahith" age = "15">
+        <button>Sahith</button>
+         </Greet>
+      <Greet name = "Pavan" age = "20"> 
+        <hr />
+       </Greet>
     </div>
   );
 }
