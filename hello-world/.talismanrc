@@ -1,0 +1,3 @@
+fileignoreconfig:
+- filename: hello-world/yarn.lock
+  checksum: 66558e9615aa0285342c0e9cea47a568d2ba1f1c103c1a89809c62f3181be678
