@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Counter from './components/Counter';
-import ClassClick from './components/ClassClick';
+import EventBinding from './components/EventBinding';
 
 function App() {
   return (
     <div className="App">
-     <ClassClick />
+     <EventBinding />
     </div>
   );
 }
