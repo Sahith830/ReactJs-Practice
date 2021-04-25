@@ -1,19 +1,21 @@
 import React from "react";
+import Person from "./Person";
 
 function NameList() {
   const personsData = [
     {
       firstName: "Chaitanya",
-      age: 20
+      age: 20,
     },
     {
       firstName: "Yashasree",
-      age: 21
-    }
-  ]
-  const personsList = personsData.map(person => (
-    <h2>{person.firstName} is {person.age} years old</h2>
-  ))
+      age: 21,
+    },
+  ];
+  const personsList = personsData.map((person) => <Person person={person} />);
+
+  console.log(personsList);
+
   return <div>{personsList}</div>;
 }
 
