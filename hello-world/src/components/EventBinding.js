@@ -13,7 +13,6 @@ export class EventBinding extends Component {
     this.setState({
       message: "Good afternoon",
     });
-    console.log('this throws undefined in setState so bind this to clickHandler as in line 24')
     console.log(this)
   }
 
@@ -21,7 +20,7 @@ export class EventBinding extends Component {
     return (
       <div>
         <h1>{this.state.message}</h1>
-        <button onClick={this.clickHandler.bind(this)}>Click</button>
+        <button onClick={() => this.clickHandler()}>Click</button>
       </div>
     );
   }
