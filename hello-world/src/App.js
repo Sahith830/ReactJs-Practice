@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Counter from './components/Counter';
-import EventBinding from './components/EventBinding';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
     <div className="App">
-     <EventBinding />
+     <ParentComponent
+     />
     </div>
   );
 }
